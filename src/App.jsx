@@ -3,6 +3,7 @@ import Sidebar from "./components/Sidebar";
 import About from "./components/About";
 import ExperienceTabs from "./components/Experience/ExperienceTabs";
 import Projects from "./components/Projects/Projects";
+import CaseStudies from "./components/CaseStudies/CaseStudies";
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
         <About />
         <ExperienceTabs />
         <Projects />
+        <CaseStudies />
       </Box>
     </Grid>
   );

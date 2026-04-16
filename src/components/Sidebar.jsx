@@ -1,5 +1,4 @@
-import { Box, Heading, Text, VStack, HStack, Link, Icon } from "@chakra-ui/react";
-import { FaGithubSquare, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import { Box, Heading, Text, VStack, HStack, Link } from "@chakra-ui/react";
 
 const Sidebar = () => {
   return (
@@ -19,24 +18,23 @@ const Sidebar = () => {
         <Link href="#case-studies" color="accent">CASE STUDIES</Link>
       </VStack>
 
-      {/* Contact Section */}
+      {/* Contact */}
       <Box mt={10}>
         <Text color="text" fontWeight="600" mb={3}>
           Contact
         </Text>
 
-        {/* All icons in one row */}
         <HStack spacing={5}>
           <Link href="https://github.com/yourusername" target="_blank" color="highlight">
-            <Icon as={FaGithubSquare } boxSize={6} />
+            GitHub
           </Link>
 
           <Link href="https://linkedin.com/in/yourusername" target="_blank" color="highlight">
-            <Icon as={FaLinkedin} boxSize={6} />
+            LinkedIn
           </Link>
 
           <Link href="mailto:youremail@example.com" color="highlight">
-            <Icon as={FaEnvelope} boxSize={6} />
+            Email
           </Link>
         </HStack>
       </Box>
