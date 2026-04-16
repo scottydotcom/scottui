@@ -73,6 +73,9 @@ const theme = extendTheme({
 
   styles: {
     global: {
+         "html": {
+      scrollBehavior: "smooth",
+    },
       body: {
         bg: "bg",
         color: "text",
