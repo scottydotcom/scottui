@@ -15,7 +15,7 @@ import {
   useDisclosure,
 } from "@chakra-ui/react";
 import { useState } from "react";
-import { caseStudies } from "../../data/caseStudies";
+import { caseStudies } from "../data/caseStudies";
 
 const CaseStudies = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -27,9 +27,7 @@ const CaseStudies = () => {
   };
 
   const handleNext = () => {
-    setCurrentIndex((prev) =>
-      prev + 1 < caseStudies.length ? prev + 1 : 0
-    );
+    setCurrentIndex((prev) => (prev + 1 < caseStudies.length ? prev + 1 : 0));
   };
 
   return (
@@ -64,13 +62,7 @@ const CaseStudies = () => {
               ))}
             </Flex>
 
-            <Link
-              onClick={() => openModal(i)}
-              color="accent"
-              mt={4}
-              display="inline-block"
-              cursor="pointer"
-            >
+            <Link onClick={() => openModal(i)} color="accent" mt={4} display="inline-block" cursor="pointer">
               Read Case Study →
             </Link>
           </Box>
@@ -81,28 +73,16 @@ const CaseStudies = () => {
       <Modal isOpen={isOpen} onClose={onClose} size="xl" isCentered>
         <ModalOverlay />
 
-        <ModalContent
-          bg="bg"
-          color="text"
-          border="1px solid"
-          borderColor="surface"
-        >
+        <ModalContent bg="bg" color="text" border="1px solid" borderColor="surface">
           <ModalHeader>{caseStudies[currentIndex].title}</ModalHeader>
           <ModalCloseButton />
 
           <ModalBody>
             <Text color="muted" mb={4}>
-              {caseStudies[currentIndex].fullText ||
-                "Full case study content goes here."}
+              {caseStudies[currentIndex].fullText || "Full case study content goes here."}
             </Text>
 
-            <Button
-              onClick={handleNext}
-              bg="olive.700"
-              color="olive.100"
-              _hover={{ bg: "olive.600" }}
-              mt={4}
-            >
+            <Button onClick={handleNext} bg="olive.700" color="olive.100" _hover={{ bg: "olive.600" }} mt={4}>
               Next Case Study →
             </Button>
           </ModalBody>

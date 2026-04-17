@@ -1,9 +1,9 @@
 import { Grid, Box } from "@chakra-ui/react";
 import Sidebar from "./components/Sidebar";
 import About from "./components/About";
-import ExperienceTabs from "./components/Experience/ExperienceTabs";
-import Projects from "./components/Projects/Projects";
-import CaseStudies from "./components/CaseStudies/CaseStudies";
+import Experiences from "./components/Experiences";
+import Projects from "./components/Projects";
+import CaseStudies from "./components/CaseStudies";
 
 const App = () => {
   return (
@@ -20,7 +20,7 @@ const App = () => {
 
       <Box display="flex" flexDirection="column" gap={12}>
         <About />
-        <ExperienceTabs />
+        <Experiences />
         <Projects />
         <CaseStudies />
       </Box>

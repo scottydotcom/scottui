@@ -1,16 +1,7 @@
-import {
-  Box,
-  Heading,
-  Flex,
-  Text,
-  Image,
-  Tag,
-  Link,
-  SimpleGrid,
-} from "@chakra-ui/react";
+import { Box, Heading, Flex, Text, Image, Tag, Link, SimpleGrid } from "@chakra-ui/react";
 import { FaGithubSquare } from "react-icons/fa";
 import { TbBrowserMaximize } from "react-icons/tb";
-import { projects, miniProjects } from "../../data/projects";
+import { projects, miniProjects } from "../data/projects";
 
 const Projects = () => {
   return (
@@ -42,14 +33,7 @@ const Projects = () => {
                 "0 0 25px rgba(255,255,255,0.10), 0 0 60px rgba(255,255,255,0.08), 0 0 90px rgba(165,115,82,0.15)",
             }}
           >
-            <Image
-              src={project.imageUrl}
-              alt={project.title}
-              w="120px"
-              h="90px"
-              objectFit="cover"
-              borderRadius="md"
-            />
+            <Image src={project.imageUrl} alt={project.title} w="120px" h="90px" objectFit="cover" borderRadius="md" />
 
             <Box flex="1">
               <Flex justify="space-between" align="center">

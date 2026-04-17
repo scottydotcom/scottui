@@ -1,14 +1,5 @@
-import {
-  Box,
-  Heading,
-  Tabs,
-  TabList,
-  TabPanels,
-  Tab,
-  TabPanel,
-  Text,
-} from "@chakra-ui/react";
-import { experience } from "../../data/experience";
+import { Box, Heading, Tabs, TabList, TabPanels, Tab, TabPanel, Text } from "@chakra-ui/react";
+import { experience } from "../data/experience";
 import { useEffect, useRef, useState } from "react";
 
 const ExperienceTabs = () => {
