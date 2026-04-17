@@ -14,7 +14,7 @@ const Sidebar = () => {
       <VStack align="start" spacing={2} mt={6}>
         <Link href="#about" color="accent">ABOUT</Link>
         <Link href="#experience" color="accent">EXPERIENCE</Link>
-        <Link href="#projects" color="accent">PROJECTS</Link> 
+        <Link href="#projects" color="accent">PROJECTS</Link>
         <Link href="#case-studies" color="accent">CASE STUDIES</Link>
       </VStack>
 
