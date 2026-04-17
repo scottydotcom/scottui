@@ -1,25 +1,3 @@
-// import { Box, Heading, Flex } from "@chakra-ui/react";
-// import { projects } from "../../data/projects";
-// import ProjectCard from "./ProjectCard";
-
-// export default function Projects() {
-//   return (
-//     <Box id="projects">
-//       <Heading size="md" mb={6} color="accent">
-//         Projects
-//       </Heading>
-
-//       <Flex direction="column" gap={6}>
-//         {projects.map((project, i) => (
-//           <ProjectCard key={i} project={project} />
-//         ))}
-//       </Flex>
-//     </Box>
-//   );
-// }
-
-// src/components/Projects/Projects.jsx
-
 import {
   Box,
   Heading,
@@ -28,10 +6,11 @@ import {
   Image,
   Tag,
   Link,
+  SimpleGrid,
 } from "@chakra-ui/react";
 import { FaGithubSquare } from "react-icons/fa";
 import { TbBrowserMaximize } from "react-icons/tb";
-import { projects } from "../../data/projects";
+import { projects, miniProjects } from "../../data/projects";
 
 const Projects = () => {
   return (
@@ -40,7 +19,8 @@ const Projects = () => {
         Projects
       </Heading>
 
-      <Flex direction="column" gap={6}>
+      {/* MAIN PROJECTS — UNCHANGED */}
+      <Flex direction="column" gap={6} mb={10}>
         {projects.map((project, i) => (
           <Flex
             key={i}
@@ -106,6 +86,71 @@ const Projects = () => {
           </Flex>
         ))}
       </Flex>
+
+      {/* MINI PROJECTS — SAME STYLING, 3-COLUMN GRID */}
+      <Heading size="sm" mb={4} color="accent">
+        {/* Smaller Projects */}
+      </Heading>
+
+      <SimpleGrid columns={{ base: 1, md: 3 }} spacing={6}>
+        {miniProjects.map((project, i) => (
+          <Flex
+            key={i}
+            p={6}
+            borderRadius="lg"
+            border="1px solid rgba(255,255,255,0.06)"
+            gap={6}
+            align="flex-start"
+            position="relative"
+            overflow="hidden"
+            transition="0.35s ease"
+            bg="surface"
+            _hover={{
+              transform: "scale(1.03)",
+              backdropFilter: "blur(18px) brightness(1.1)",
+              bg: "rgba(255,255,255,0.08)",
+              borderColor: "rgba(255,255,255,0.25)",
+              boxShadow:
+                "0 0 25px rgba(255,255,255,0.10), 0 0 60px rgba(255,255,255,0.08), 0 0 90px rgba(165,115,82,0.15)",
+            }}
+          >
+            {/* Mini cards can use a smaller image or icon */}
+
+            <Box flex="1">
+              <Flex justify="space-between" align="center">
+                <Heading size="sm" color="text">
+                  {project.title}
+                </Heading>
+
+                <Flex gap={3}>
+                  {project.github && (
+                    <Link href={project.github} target="_blank" color="accent">
+                      <FaGithubSquare size={20} />
+                    </Link>
+                  )}
+                  {project.live && (
+                    <Link href={project.live} target="_blank" color="accent">
+                      <TbBrowserMaximize size={20} />
+                    </Link>
+                  )}
+                </Flex>
+              </Flex>
+
+              <Text color="muted" mt={2}>
+                {project.description}
+              </Text>
+
+              <Flex gap={2} mt={3} wrap="wrap">
+                {project.tech.map((tag, idx) => (
+                  <Tag key={idx} bg="olive.700" color="olive.100">
+                    {tag}
+                  </Tag>
+                ))}
+              </Flex>
+            </Box>
+          </Flex>
+        ))}
+      </SimpleGrid>
     </Box>
   );
 };

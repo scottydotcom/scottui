@@ -58,7 +58,7 @@ const CaseStudies = () => {
 
             <Flex gap={2} wrap="wrap">
               {study.tags.map((tag, idx) => (
-                <Tag key={idx} bg="ink.700" color="ink.100">
+                <Tag key={idx} bg="olive.700" color="olive.100">
                   {tag}
                 </Tag>
               ))}
@@ -98,10 +98,9 @@ const CaseStudies = () => {
 
             <Button
               onClick={handleNext}
-              colorScheme="none"
-              bg="ink.700"
-              color="ink.100"
-              _hover={{ bg: "ink.600" }}
+              bg="olive.700"
+              color="olive.100"
+              _hover={{ bg: "olive.600" }}
               mt={4}
             >
               Next Case Study →

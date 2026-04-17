@@ -32,3 +32,27 @@ export const projects = [
     open: "https://earthsrealm.netlify.app/",
   },
 ];
+
+export const miniProjects = [
+  {
+    title: "Weather Dashboard",
+    description: "Real‑time weather using OpenWeather API.",
+    tech: ["React", "API", "Chakra UI"],
+    github: "https://github.com/example/weather",
+    live: "https://weather.example.com",
+  },
+  {
+    title: "Notes App",
+    description: "Lightweight notes app with local storage.",
+    tech: ["React", "LocalStorage"],
+    github: "https://github.com/example/notes",
+    live: "https://notes.example.com",
+  },
+  {
+    title: "Color Palette Generator",
+    description: "Generates harmonious palettes using HSL math.",
+    tech: ["JavaScript", "CSS"],
+    github: "https://github.com/example/palette",
+    live: "https://palette.example.com",
+  },
+];
