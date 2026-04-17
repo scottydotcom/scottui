@@ -14,30 +14,31 @@ const Sidebar = () => {
       <VStack align="start" spacing={2} mt={6}>
         <Link href="#about" color="accent">ABOUT</Link>
         <Link href="#experience" color="accent">EXPERIENCE</Link>
-        <Link href="#projects" color="accent">PROJECTS</Link>
+        <Link href="#projects" color="accent">PROJECTS</Link> 
         <Link href="#case-studies" color="accent">CASE STUDIES</Link>
       </VStack>
 
-      {/* Contact */}
-      <Box mt={10}>
-        <Text color="text" fontWeight="600" mb={3}>
-          Contact
-        </Text>
+{/* Contact */}
+<Box mt={10}>
+  <Text color="text" fontWeight="600" mb={3}>
+    Contact
+  </Text>
 
-        <HStack spacing={5}>
-          <Link href="https://github.com/yourusername" target="_blank" color="highlight">
-            GitHub
-          </Link>
+  <HStack spacing={4} divider={<Box h="16px" w="1px" bg="muted" />}>
+    <Link href="https://github.com/yourusername" target="_blank" color="highlight">
+      GitHub
+    </Link>
 
-          <Link href="https://linkedin.com/in/yourusername" target="_blank" color="highlight">
-            LinkedIn
-          </Link>
+    <Link href="https://linkedin.com/in/yourusername" target="_blank" color="highlight">
+      LinkedIn
+    </Link>
 
-          <Link href="mailto:youremail@example.com" color="highlight">
-            Email
-          </Link>
-        </HStack>
-      </Box>
+    <Link href="mailto:youremail@example.com" color="highlight">
+      Email
+    </Link>
+  </HStack>
+</Box>
+
 
       <Text mt={10} color="muted" fontSize="sm">
         © 2026 Your Name. All rights reserved.

@@ -8,62 +8,80 @@ const theme = extendTheme({
   },
 
   colors: {
-    // Warm beige → rosewood gradient
+    // Warm beige → rosewood gradient (UNCHANGED)
     brand: {
       50: "#f8f3ef",
       100: "#e9ded4",
       200: "#d8c3b3",
       300: "#c7a892",
       400: "#b68d72",
-      500: "#a57352", // primary accent (warm beige-brown)
+      500: "#a57352", // primary accent
       600: "#8a5c3f",
       700: "#6f4630",
       800: "#543120",
       900: "#3a1e14",
     },
 
-    // Olive greens (muted, natural)
+    // Olive greens (UNCHANGED)
     olive: {
       50: "#f4f6f1",
       100: "#e3e8d9",
       200: "#c7d0b3",
       300: "#aab88d",
       400: "#8ea067",
-      500: "#73874e", // main olive
+      500: "#73874e",
       600: "#5b6b3d",
       700: "#44502d",
       800: "#2d351d",
       900: "#171c0e",
     },
+
+    // NEW ink palette (warm slate, works with beige + olive)
+    ink: {
+      50: "#f2f4f6",
+      100: "#d9dde2",
+      200: "#b8c0c8",
+      300: "#96a3af",
+      400: "#74818e",
+      500: "#5A6472",
+      600: "#4a525d",
+      700: "#3C4450",
+      800: "#2c323b",
+      900: "#1d2127",
+    },
   },
 
-  // Semantic tokens for dark mode
   semanticTokens: {
     colors: {
       bg: {
-        default: "#0f0f0d", // warm charcoal
+        default: "#0f0f0d",
         _dark: "#0f0f0d",
       },
       surface: {
-        default: "rgba(255,255,255,0.04)", // subtle cards
+        default: "rgba(255,255,255,0.04)",
         _dark: "rgba(255,255,255,0.04)",
       },
       text: {
-        default: "#f2eee9", // warm off-white
+        default: "#f2eee9",
         _dark: "#f2eee9",
       },
       muted: {
-        default: "#b8b3ac", // warm muted beige
+        default: "#b8b3ac",
         _dark: "#b8b3ac",
       },
+
+      // Warm beige accent (UNCHANGED)
       accent: {
-        default: "brand.500", // warm beige accent
+        default: "brand.500",
         _dark: "brand.500",
       },
+
+      // Warm highlight (no blue)
       highlight: {
-        default: "brand.300", // subtle blue highlight
-        _dark: "brand.400",
+        default: "brand.300",
+        _dark: "brand.300",
       },
+
       success: {
         default: "olive.400",
         _dark: "olive.400",
@@ -73,9 +91,9 @@ const theme = extendTheme({
 
   styles: {
     global: {
-         "html": {
-      scrollBehavior: "smooth",
-    },
+      html: {
+        scrollBehavior: "smooth",
+      },
       body: {
         bg: "bg",
         color: "text",
