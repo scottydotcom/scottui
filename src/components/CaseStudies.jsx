@@ -45,7 +45,9 @@ const CaseStudies = () => {
             borderBottom="1px solid"
             borderColor="surface"
             transition="0.2s ease"
-            _hover={{ bg: "surface"}}
+            _hover={{ bg: "surface",
+              transform: "scale(1.03)",
+            }}
           >
             <Heading size="md" color="text">
               {study.title}

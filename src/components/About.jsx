@@ -101,7 +101,12 @@ const About = () => {
             {/* ⭐ 3×3 Grid of Hobbies */}
             <SimpleGrid columns={[2, 3]} spacing={6} mb={6}>
               {hobbies.map((item) => (
-                <Flex key={item.text} direction="column" align="center" justify="center" gap={2} color="muted">
+                <Flex key={item.text} direction="column" align="center" justify="center" gap={2} color="muted"
+                  transition="all 0.25s ease"
+                  _hover={{
+                  transform: "translateY(-2px)",
+  }}
+                >
                   <Box fontSize="2xl" color="highlight">
                     <item.icon />
                   </Box>

@@ -1,4 +1,13 @@
-import { Box, Heading, Tabs, TabList, TabPanels, Tab, TabPanel, Text } from "@chakra-ui/react";
+import {
+  Box,
+  Heading,
+  Tabs,
+  TabList,
+  TabPanels,
+  Tab,
+  TabPanel,
+  Text,
+} from "@chakra-ui/react";
 import { experience } from "../data/experience";
 import { useEffect, useRef, useState } from "react";
 
@@ -31,6 +40,7 @@ const ExperienceTabs = () => {
 
       <Tabs orientation="vertical" variant="unstyled" onChange={handleTabChange}>
         <Box position="relative">
+          {/* Vertical highlight bar */}
           <Box
             position="absolute"
             right="-2px"
@@ -43,15 +53,36 @@ const ExperienceTabs = () => {
             boxShadow="0 0 12px accent"
           />
 
-          <TabList borderRight="1px solid" borderColor="surface" pr={4} minW="180px">
+          <TabList
+            borderRight="1px solid"
+            borderColor="surface"
+            pr={4}
+            minW="180px"
+          >
             {experience.map((job, i) => (
               <Tab
                 key={i}
                 ref={(el) => (tabRefs.current[i] = el)}
                 color="muted"
-                _selected={{ color: "highlight", fontWeight: "600" }}
                 py={3}
                 textAlign="left"
+                fontWeight="500"
+                position="relative"
+                transition="all 0.25s ease"
+
+                /* ⭐ Subtle hover zoom */
+                _hover={{
+                  transform: "scale(1.04)",
+                  filter: "brightness(1.15)",
+                }}
+
+                /* ⭐ Active tab (no zoom, just color) */
+                _selected={{
+                  color: "highlight",
+                  fontWeight: "600",
+                  transform: "scale(1)", // prevents zoom on active
+                  filter: "brightness(1)",
+                }}
               >
                 {job.company}
               </Tab>
