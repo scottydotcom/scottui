@@ -24,14 +24,11 @@ const Projects = () => {
             overflow="hidden"
             transition="0.35s ease"
             bg="surface"
-            backdropFilter="blur(8px)"
+            backdropFilter="blur(18px)"
             _hover={{
               transform: "scale(1.03)",
               backdropFilter: "blur(18px) brightness(1.1)",
-              bg: "rgba(255,255,255,0.08)",
-              borderColor: "rgba(255,255,255,0.25)",
-              boxShadow:
-                "0 0 25px rgba(255,255,255,0.10), 0 0 60px rgba(255,255,255,0.08), 0 0 90px rgba(165,115,82,0.15)",
+              bg: "rgba(255,255,255,0.05)",
             }}
           >
             <Image src={project.imageUrl} alt={project.title} w="120px" h="90px" objectFit="cover" borderRadius="md" />
@@ -93,10 +90,7 @@ const Projects = () => {
             _hover={{
               transform: "scale(1.03)",
               backdropFilter: "blur(18px) brightness(1.1)",
-              bg: "rgba(255,255,255,0.08)",
-              borderColor: "rgba(255,255,255,0.25)",
-              boxShadow:
-                "0 0 25px rgba(255,255,255,0.10), 0 0 60px rgba(255,255,255,0.08), 0 0 90px rgba(165,115,82,0.15)",
+              bg: "rgba(255,255,255,0.05)",
             }}
           >
             {/* Mini cards can use a smaller image or icon */}

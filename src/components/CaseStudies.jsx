@@ -47,6 +47,7 @@ const CaseStudies = () => {
             transition="0.2s ease"
             _hover={{ bg: "surface",
               transform: "scale(1.03)",
+               bg: "rgba(255,255,255,0.05)",
             }}
           >
             <Heading size="md" color="subtleText">
@@ -65,7 +66,24 @@ const CaseStudies = () => {
               ))}
             </Flex>
 
-            <Link onClick={() => openModal(i)} color="accent" mt={4} display="inline-block" cursor="pointer">
+            <Link onClick={() => openModal(i)} color="accent" mt={4} display="inline-block" cursor="pointer"
+             position="relative"               // REQUIRED
+  _after={{
+    content: '""',
+    position: "absolute",
+    bottom: "-2px",
+    left: "0",
+    width: "0%",                    // start hidden
+    height: "1px",
+    backgroundColor: "highlight",
+    transition: "width 0.25s ease", // animate width
+  }}
+  _hover={{
+    _after: {
+      width: "100%",                // animate like sidebar
+    },
+  }}
+>
               Read Case Study →
             </Link>
           </Box>
