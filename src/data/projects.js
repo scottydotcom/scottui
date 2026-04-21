@@ -95,7 +95,7 @@ import { BsQrCode } from "react-icons/bs";
 export const projects = [
   {
     title: "food",
-    imageUrl: "src/assets/mnk.png",
+    imageUrl: "src/assets/img/mnk.png",
     description:
       "i fat and i eat.",
     tags: ["React", "Chakra UI", "Firebase", "Framer Motion"],
@@ -105,7 +105,7 @@ export const projects = [
 
   {
     title: "sleep",
-    imageUrl: "src/assets/qc.png",
+    imageUrl: "src/assets/img/qc.png",
     description:
       "i tired so i sleep.",
     tags: ["React", "Node.js", "Express", "MongoDB"],
@@ -115,7 +115,7 @@ export const projects = [
 
   {
     title: "coder bun",
-    imageUrl: "src/assets/erlm.png",
+    imageUrl: "src/assets/img/erlm.png",
     description:
       "i code tuji and luobei emoji.",
     tags: ["React", "Vite", "Chakra UI", "Zustand"],
@@ -124,7 +124,7 @@ export const projects = [
   },
   {
     title: "anime",
-    imageUrl: "src/assets/enso.png",
+    imageUrl: "src/assets/img/enso.png",
     description:
       "we watch anime and cry.",
     tags: ["React", "Vite", "Chakra UI", "Zustand"],

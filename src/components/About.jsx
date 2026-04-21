@@ -126,8 +126,11 @@ const About = () => {
               projects that help me refine my craft. */}
             </Text>
             <Text color="muted" mb={6}>
-              {/* Outside of coding, here are a few things that inspire me and keep me balanced: */}
+              Outside of coding, these are my hobbies keep me balanced
             </Text>
+
+            {/* <Text color="highlight" fontWeight="600" mb={4}>Things I Enjoy</Text> */}
+
 
             {/* ⭐ 3×3 Grid of Hobbies */}
             <SimpleGrid columns={[2, 3]} spacing={6} mb={6}>
