@@ -1,135 +1,37 @@
-// export const projects = [
-//   {
-//     title: "Midnight Koi",
-//     description: "Personal vscode theme designed to enhance coding focus visually.",
-//     imageUrl: "koi.png",
-//     tags: ["JSON", "Node.js", "Yeoman"],
-//     link: "https://github.com/scottydotcom/midnight-koi",
-//     open: "https://marketplace.visualstudio.com/items?itemName=scottydotcom-midnight-koi-theme.midnight-koi",
-//   },
-//   {
-//     title: "Enso",
-//     description: "Discord bot that sends positive affirmations to users.",
-//     imageUrl: "enso.png",
-//     tags: ["JavaScript", "Node.js", "Discord.js"],
-//     link: "https://github.com/scottydotcom/Enso",
-//     open: "",
-//   },
-//   {
-//     title: "Quick Chat",
-//     description: "A blog that allows you to interact and talk with users in real-time.",
-//     imageUrl: "QC.png",
-//     tags: ["JavaScript", "Node.js", "HTML", "CSS"],
-//     link: "https://github.com/scottydotcom/quickchat",
-//     open: "https://quickchatblog.netlify.app/",
-//   },
-//   {
-//     title: "Earths Realm",
-//     description: "A website that shows users parks & recreation all across America.",
-//     imageUrl: "earth-realm.png",
-//     tags: ["JavaScript", "HTML", "CSS"],
-//     link: "https://github.com/scottydotcom/earths-realm",
-//     open: "https://earthsrealm.netlify.app/",
-//   },
-// ];
-
-import { BsQrCode } from "react-icons/bs";
-
-// export const projects = [
-//   {
-//     title: "Aurora Task Manager",
-//     description:
-//       "A minimalist productivity app with drag‑and‑drop task sorting, smart categories, and a warm‑dark UI inspired by your design palette.",
-//     tags: ["React", "Chakra UI", "Firebase", "Framer Motion"],
-//     link: "https://github.com/yourusername/aurora-task-manager",
-//     open: "https://aurora-app-demo.netlify.app",
-//   },
-
-//   {
-//     title: "Verdant Recipes",
-//     description:
-//       "A recipe discovery platform with ingredient‑based search, saved collections, and a clean card‑grid layout optimized for mobile.",
-//     tags: ["React", "Node.js", "Express", "MongoDB"],
-//     link: "https://github.com/yourusername/verdant-recipes",
-//     open: "https://verdant-recipes-demo.vercel.app",
-//   },
-
-//   {
-//     title: "Inkfolio Portfolio Builder",
-//     description:
-//       "A customizable portfolio generator with theme tokens, live preview, and export‑to‑static‑site functionality.",
-//     tags: ["React", "Vite", "Chakra UI", "Zustand"],
-//     link: "https://github.com/yourusername/inkfolio",
-//     open: "https://inkfolio-demo.vercel.app",
-//   },
-// ];
-
-
-// export const miniProjects = [
-//   {
-//     title: "PaletteCraft",
-//     description:
-//       "A color palette generator with warm‑dark presets and instant contrast checking.",
-//     tech: ["React", "Chakra UI"],
-//     github: "https://github.com/yourusername/palettecraft",
-//   },
-
-//   {
-//     title: "FocusTimer",
-//     description:
-//       "A Pomodoro timer with session analytics and subtle micro‑interactions.",
-//     tech: ["React", "Framer Motion"],
-//     github: "https://github.com/yourusername/focustimer",
-//   },
-
-//   {
-//     title: "LinkNest",
-//     description:
-//       "A clean, minimal link‑in‑bio page with customizable themes and social previews.",
-//     tech: ["React", "Vite"],
-//     github: "https://github.com/yourusername/linknest",
-//   },
-// ];
-
-
 export const projects = [
   {
-    title: "food",
+    title: "Midnight Koi",
     imageUrl: "src/assets/img/mnk.png",
-    description:
-      "i fat and i eat.",
+    description: "Personal vscode theme designed to enhance coding focus visually.",
     tags: ["React", "Chakra UI", "Firebase", "Framer Motion"],
-    link: "https://github.com/yourusername/aurora-task-manager",
-    open: "https://aurora-app-demo.netlify.app",
+    link: "https://github.com/scottydotcom/midnight-koi",
+    open: "https://marketplace.visualstudio.com/items?itemName=scottydotcom.scottydotcom-dark-theme",
   },
 
   {
-    title: "sleep",
+    title: "quick Chat",
     imageUrl: "src/assets/img/qc.png",
-    description:
-      "i tired so i sleep.",
+    description: "A blog that allows you to interact and talk with users in real-time..",
     tags: ["React", "Node.js", "Express", "MongoDB"],
-    link: "https://github.com/yourusername/verdant-recipes",
-    open: "https://verdant-recipes-demo.vercel.app",
+    link: "https://github.com/scottydotcom/quickchat",
+    open: "https://quickchatblog.netlify.app/",
   },
 
   {
-    title: "coder bun",
+    title: "Earths Realm",
     imageUrl: "src/assets/img/erlm.png",
-    description:
-      "i code tuji and luobei emoji.",
+    description: "A website that shows users parks & recreation all across America.",
     tags: ["React", "Vite", "Chakra UI", "Zustand"],
-    link: "https://github.com/yourusername/inkfolio",
-    open: "https://inkfolio-demo.vercel.app",
+    link: "https://github.com/scottydotcom/earths-realm",
+    open: "https://earthsrealm.netlify.app/",
   },
   {
-    title: "anime",
+    title: "Enso",
     imageUrl: "src/assets/img/enso.png",
-    description:
-      "we watch anime and cry.",
+    description: "Discord bot that sends positive affirmations to users.",
     tags: ["React", "Vite", "Chakra UI", "Zustand"],
-    link: "https://github.com/yourusername/inkfolio",
-    open: "https://inkfolio-demo.vercel.app",
+    link: "https://github.com/scottydotcom/Enso",
+    open: "",
   },
 ];
 
