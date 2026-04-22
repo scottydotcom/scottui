@@ -29,6 +29,8 @@ const About = () => {
       <Text color="muted" maxW="600px" lineHeight="1.7" mb={3}>
         Write a short blurb about who you are, what you do, and what drives your work. Keep it warm, human, and focused
         on your strengths.
+        
+        {/* I’m a full‑stack engineer with modern tooling and production‑ready skills. */}
       </Text>
 
       {/* Skills Section */}

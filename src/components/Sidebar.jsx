@@ -4,15 +4,13 @@ const Sidebar = () => {
   return (
     <Box position="sticky" top="4rem" h="fit-content">
       <Heading size="xl" color="subtleText">
-        Your Name
+        Scott
       </Heading>
       <Text color="muted" mt={2}>
-        Your Title
+        Full Stack · AI · UI/UX Designer
       </Text>
-
       <Text color="muted" mt={4}>
-        I build accessible, clean, and thoughtful digital experiences.
-        {/* I’m a full‑stack engineer with modern tooling and production‑ready skills. */}
+        I build scalable, intuitive experiences across engineering, AI, and design.
       </Text>
 
       {/* Navigation */}
