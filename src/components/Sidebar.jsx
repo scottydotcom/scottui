@@ -68,15 +68,11 @@ const Sidebar = () => {
         </HStack>
       </Box>
 
-      {/* <Text mt={10} color="muted" fontSize="sm">
-        © {new Date().getFullYear()} Your Name. All rights reserved.
-      </Text> */}
-
+      {/* footer */}
       <Stack mt={10} spacing={1}>
         <Text color="muted" fontSize="sm">
           Built and designed by me — scottydotcom.
         </Text>
-
         <Text color="muted" fontSize="sm">
           © {new Date().getFullYear()} All rights reserved.
         </Text>
