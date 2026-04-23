@@ -14,39 +14,38 @@ const Sidebar = () => {
       </Text>
 
       {/* Navigation */}
-<VStack align="start" spacing={2} mt={6}>
-  {[
-    { label: "ABOUT", href: "#about" },
-    { label: "EXPERIENCE", href: "#experience" },
-    { label: "PROJECTS", href: "#projects" },
-    { label: "CASE STUDIES", href: "#case-studies" },
-  ].map((item) => (
-    <Link
-      key={item.href}
-      href={item.href}
-      color="accent"
-      position="relative"
-      _after={{
-        content: '""',
-        position: "absolute",
-        bottom: "-2px",
-        left: "0",
-        width: "0%",
-        height: "1px",
-        backgroundColor: "highlight",
-        transition: "width 0.25s ease",
-      }}
-      _hover={{
-        _after: {
-          width: "100%",
-        },
-      }}
-    >
-      {item.label}
-    </Link>
-  ))}
-</VStack>
-
+      <VStack align="start" spacing={2} mt={6}>
+        {[
+          { label: "ABOUT", href: "#about" },
+          { label: "EXPERIENCE", href: "#experience" },
+          { label: "PROJECTS", href: "#projects" },
+          { label: "CASE STUDIES", href: "#case-studies" },
+        ].map((item) => (
+          <Link
+            key={item.href}
+            href={item.href}
+            color="accent"
+            position="relative"
+            _after={{
+              content: '""',
+              position: "absolute",
+              bottom: "-2px",
+              left: "0",
+              width: "0%",
+              height: "1px",
+              backgroundColor: "highlight",
+              transition: "width 0.25s ease",
+            }}
+            _hover={{
+              _after: {
+                width: "100%",
+              },
+            }}
+          >
+            {item.label}
+          </Link>
+        ))}
+      </VStack>
 
       {/* Contact */}
       <Box mt={10}>
@@ -73,16 +72,15 @@ const Sidebar = () => {
         © {new Date().getFullYear()} Your Name. All rights reserved.
       </Text> */}
 
-      <Stack mt={10} spacing={1} >
+      <Stack mt={10} spacing={1}>
         <Text color="muted" fontSize="sm">
-          Built and designed by me — scottydotcom.  
+          Built and designed by me — scottydotcom.
         </Text>
 
         <Text color="muted" fontSize="sm">
-         © {new Date().getFullYear()} All rights reserved.
+          © {new Date().getFullYear()} All rights reserved.
         </Text>
       </Stack>
-
     </Box>
   );
 };
