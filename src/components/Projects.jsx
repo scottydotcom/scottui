@@ -74,7 +74,7 @@ const Projects = () => {
         Smaller Projects
       </Heading> */}
 
-      <SimpleGrid columns={{ base: 1, md: 3 }} spacing={6}>
+      {/* <SimpleGrid columns={{ base: 1, md: 3 }} spacing={6}>
         {miniProjects.map((project, i) => (
           <Flex
             key={i}
@@ -93,7 +93,7 @@ const Projects = () => {
               bg: "rgba(255,255,255,0.05)",
             }}
           >
-            {/* Mini cards can use a smaller image or icon */}
+            
 
             <Box flex="1">
               <Flex justify="space-between" align="center">
@@ -129,7 +129,7 @@ const Projects = () => {
             </Box>
           </Flex>
         ))}
-      </SimpleGrid>
+      </SimpleGrid> */}
     </Box>
   );
 };

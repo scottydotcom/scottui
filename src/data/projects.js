@@ -40,7 +40,7 @@ export const miniProjects = [
   {
     title: "Place Holder 1",
     description:
-      "we love collecting pokemon cards.",
+      "Simple portfolio site built with React, Chakra UI, and Vite.",
     tags: ["React", "Chakra UI"],
     github: "https://github.com/yourusername/palettecraft",
   },
@@ -48,7 +48,7 @@ export const miniProjects = [
   {
     title: "Place Holder 2",
     description:
-      "we are tuji and luobei enthusiasts.",
+      "Compact React tool using Chakra UI for task streamlining.",
     tags: ["React", "Framer Motion"],
     github: "https://github.com/yourusername/focustimer",
   },
@@ -56,7 +56,7 @@ export const miniProjects = [
   {
     title: "Place Holder 3",
     description:
-      "we go gym and be healthy so no sick.",
+      "Experimental web app exploring animations with JavaScript frameworks.",
     tags: ["React", "Vite"],
     github: "https://github.com/yourusername/linknest",
   },
