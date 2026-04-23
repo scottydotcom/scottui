@@ -10,7 +10,7 @@ const Projects = () => {
         Projects
       </Heading>
 
-      {/* MAIN PROJECTS — UNCHANGED */}
+      {/* MAIN PROJECTS */}
       <Flex direction="column" gap={6} mb={7}>
         {projects.map((project, i) => (
           <Flex
@@ -135,17 +135,3 @@ const Projects = () => {
 };
 
 export default Projects;
-
-
-{/* <Flex align="center" mb={6}>
-  <Heading size="md" color="accent">
-    Projects
-  </Heading>
-
-  <Divider
-    ml={4}
-    mt={1}
-    flex="1"
-    borderColor="highlight" // or your theme token
-  />
-</Flex> */}
