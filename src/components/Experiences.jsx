@@ -80,11 +80,9 @@ const ExperienceTabs = () => {
               <Heading size="md" color="subtleText">
                 {job.role} @ {job.company}
               </Heading>
-
               <Text color="subtleText" mt={1} mb={4}>
                 {job.date}
               </Text>
-
               {job.bullets.map((b, idx) => (
                 <Flex key={idx} mb={2} align="flex-start" gap={2}>
                   <Text color="accent" mt="2px">

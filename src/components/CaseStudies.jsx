@@ -102,7 +102,7 @@ const CaseStudies = () => {
 
           <ModalBody>
             <Text color="muted" mb={4}>
-              {caseStudies[currentIndex].fullText || "Full case study content goes here."}
+              {caseStudies[currentIndex].fullText}
             </Text>
 
             <Button onClick={handleNext} bg="olive.700" color="olive.100" _hover={{ bg: "olive.600" }} mt={4}>
