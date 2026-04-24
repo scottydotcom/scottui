@@ -1,14 +1,4 @@
-import {
-  Box,
-  Heading,
-  Flex,
-  Tabs,
-  TabList,
-  TabPanels,
-  Tab,
-  TabPanel,
-  Text,
-} from "@chakra-ui/react";
+import { Box, Heading, Flex, Tabs, TabList, TabPanels, Tab, TabPanel, Text } from "@chakra-ui/react";
 import { experience } from "../data/experience";
 import { useEffect, useRef, useState } from "react";
 
@@ -54,12 +44,7 @@ const ExperienceTabs = () => {
             boxShadow="0 0 12px accent"
           />
 
-          <TabList
-            borderRight="1px solid"
-            borderColor="surface"
-            pr={4}
-            minW="180px"
-          >
+          <TabList borderRight="1px solid" borderColor="surface" pr={4} minW="190px">
             {experience.map((job, i) => (
               <Tab
                 key={i}
@@ -70,14 +55,12 @@ const ExperienceTabs = () => {
                 fontWeight="500"
                 position="relative"
                 transition="all 0.25s ease"
-
-                /* ⭐ Subtle hover zoom */
+                /* Subtle hover zoom */
                 _hover={{
                   transform: "scale(1.04)",
                   filter: "brightness(1.15)",
                 }}
-
-                /* ⭐ Active tab (no zoom, just color) */
+                /* Active tab (no zoom, just color) */
                 _selected={{
                   color: "highlight",
                   fontWeight: "600",
@@ -91,7 +74,7 @@ const ExperienceTabs = () => {
           </TabList>
         </Box>
 
-        <TabPanels pl={6} >
+        <TabPanels pl={6}>
           {experience.map((job, i) => (
             <TabPanel key={i}>
               <Heading size="md" color="subtleText">
@@ -103,11 +86,13 @@ const ExperienceTabs = () => {
               </Text>
 
               {job.bullets.map((b, idx) => (
-              <Flex key={idx} mb={2} align="flex-start" gap={2}>
-                <Text color="accent" mt="2px">▹</Text>
-                {/* <Text color="accent" mt="2px">➥</Text> */}
-                <Text color="muted">{b}</Text>
-              </Flex>
+                <Flex key={idx} mb={2} align="flex-start" gap={2}>
+                  <Text color="accent" mt="2px">
+                    ▹
+                  </Text>
+                  {/* <Text color="accent" mt="2px">➥</Text> */}
+                  <Text color="muted">{b}</Text>
+                </Flex>
               ))}
             </TabPanel>
           ))}
