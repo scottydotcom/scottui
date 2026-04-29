@@ -16,7 +16,7 @@ const Sidebar = () => {
       {/* Navigation */}
       <VStack align="start" spacing={2} mt={6}>
         {[
-          { label: "ABOUT", href: "#about" },
+          { label: "ABOUT", href: "#" },
           { label: "EXPERIENCE", href: "#experience" },
           { label: "PROJECTS", href: "#projects" },
           { label: "CASE STUDIES", href: "#case-studies" },
@@ -54,7 +54,7 @@ const Sidebar = () => {
         </Text>
 
         <HStack spacing={4} divider={<Box h="16px" w="1px" bg="muted" />}>
-          <Link href="https://github.com/yourusername" target="_blank" color="highlight">
+          <Link href="https://github.com/soraplex" target="_blank" color="highlight">
             GitHub
           </Link>
 
@@ -71,7 +71,7 @@ const Sidebar = () => {
       {/* footer */}
       <Stack mt={10} spacing={1}>
         <Text color="muted" fontSize="sm">
-          Built and designed by me — scottydotcom.
+          Built and designed by me — soraplex.
         </Text>
         <Text color="muted" fontSize="sm">
           © {new Date().getFullYear()} All rights reserved.
